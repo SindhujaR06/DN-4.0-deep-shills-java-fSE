@@ -34,8 +34,6 @@ public class ECommerceSearch {
         }
         return null;
     }
-
-    // Step 6: Main method with comparison
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Product[] products = {
