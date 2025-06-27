@@ -1,17 +1,14 @@
 import java.util.*;
-
 public class ECommerceSearch {
     static class Product {
         int productId;
         String productName;
         String category;
-
         Product(int id, String name, String cat) {
             productId = id;
             productName = name;
             category = cat;
         }
-
         public String toString() {
             return "Product[ID=" + productId + ", Name=" + productName + ", Category=" + category + "]";
         }
@@ -43,7 +40,6 @@ public class ECommerceSearch {
             new Product(104, "Shoes", "Footwear"),
             new Product(105, "Shirt", "Apparel")
         };
-
         System.out.print("Enter product name to search: ");
         String input = sc.nextLine();
         long start1 = System.nanoTime();
@@ -55,15 +51,11 @@ public class ECommerceSearch {
         System.out.println("\nLinear Search Result:");
         if (result1 != null) System.out.println(result1);
         else System.out.println("Product not found.");
-
         System.out.println("Time: " + (end1 - start1) + " ns");
-
         System.out.println("\nBinary Search Result:");
         if (result2 != null) System.out.println(result2);
         else System.out.println("Product not found.");
-
         System.out.println("Time: " + (end2 - start2) + " ns");
-
         sc.close();
     }
 }
