@@ -1,7 +1,7 @@
 public class FinancialForecast {
         public static double futureValueRecursive(double presentValue, double rate, int years) {
-            if (years == 0)
-                return presentValue; 
+            if (years == 0){
+                return presentValue; }
             return futureValueRecursive(presentValue * (1 + rate), rate, years - 1);
         }
         public static double futureValueIterative(double presentValue, double rate, int years) {
