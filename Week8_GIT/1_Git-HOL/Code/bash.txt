@@ -1,0 +1,24 @@
+$ git version
+$ git config --global user.name "Bhagya-06"
+$ git config --global user.email "bhagya6balaji@gmail.com"
+$ git config --global --list
+$ notepad++
+$ notepad++.exe bash -profile
+$ git config --global core.editor "notepad.exe -multiInst -nosession"
+% git config --global -e
+$ git init GitDemo
+$ ls -al
+$ echo "Welcome to the version control" >> welcome.txt
+$ ls -al
+$ cat welcome.txt
+$ git status
+$ git add welcome.txt
+$ git commit
+$ git status
+$ cd GitDemo
+$ git pull origin master
+$ git remote add origin https://gitlab.com/your-username/GitDemo.git
+$ echo "# My Git Demo Project" > README.md
+$ git add .
+$ git commit -m "Add README"
+$ git push -u origin master

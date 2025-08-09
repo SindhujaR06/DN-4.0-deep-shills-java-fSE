@@ -1,0 +1,29 @@
+#Branching
+git branch GitNewBranch
+git branch
+git branch -a
+git checkout GitNewBranch
+echo "This is a file for GitNewBranch" > branchfile.txt
+echo "Another file content" > branchnote.txt
+git add .
+git commit -m "Add files to GitNewBranch"
+git status
+
+#Merging
+git checkout master
+git diff master GitNewBranch
+git config --global merge.tool p4merge
+git config --global mergetool.p4merge.path "C:/ProgramFiles/Perforce"
+git merge GitNewBranch
+git log --oneline --graph --decorate
+git branch -d GitNewBranch
+git status
+
+
+
+
+
+
+
+
+

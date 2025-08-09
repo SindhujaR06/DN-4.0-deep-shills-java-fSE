@@ -1,0 +1,12 @@
+git checkout master
+git status
+git branch -a
+git pull origin master
+git branch Git-T03-HOL_002
+git checkout Git-T03-HOL_002
+echo "This is Git-T03-HOL_002 branch" > hol002.txt
+git add .
+git commit -m "Add initial file for Git-T03-HOL_002 branch"
+git push origin Git-T03-HOL_002
+git fetch --all
+git branch -a
